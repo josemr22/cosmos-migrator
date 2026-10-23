@@ -1,0 +1,29 @@
+{
+  "name": "cosmos-migrator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only planning CLI for Cosmos DB migrations",
+  "type": "module",
+  "bin": {
+    "cosmos-migrator": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run src",
+    "dev": "tsx src/cli.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^4.9.3",
+    "commander": "^13.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^5.0.5"
+  }
+}
